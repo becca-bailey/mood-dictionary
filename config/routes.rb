@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'moods#index'
   resources :tempos
   resources :colors
   resources :scales
