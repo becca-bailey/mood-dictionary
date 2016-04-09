@@ -1,14 +1,20 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<p>
-  <strong>Name:</strong>
-  <%= @mood.name %>
-</p>
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @mood.description %>
-</p>
+  <h2>
+    <%= @mood.name %>
+  </h2>
 
-<%= link_to 'Edit', edit_mood_path(@mood) %> |
-<%= link_to 'Back', moods_path %>
+  <% @mood.scales.each do |scale| %>
+    <h4><%= scale.name %></h4>
+    <% if scale.image_url %>
+      <img src=<%= scale.image_url %>>
+    <% end %>
+    <p><%= scale.description %>
+
+  <% end %>
+  
+  <%= link_to 'Back', moods_path %>
+
+</div>
