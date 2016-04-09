@@ -23,13 +23,17 @@ ActiveRecord::Schema.define(version: 20160409174811) do
   create_table "moods", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
+    t.integer  "primary_mood_id"
+    t.string   "image_url"
     t.integer  "moodable_id"
     t.string   "moodable_type"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.boolean  "primary"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   add_index "moods", ["moodable_type", "moodable_id"], name: "index_moods_on_moodable_type_and_moodable_id"
+  add_index "moods", ["primary_mood_id"], name: "index_moods_on_primary_mood_id"
 
   create_table "photos", force: :cascade do |t|
     t.string   "name"
@@ -39,23 +43,22 @@ ActiveRecord::Schema.define(version: 20160409174811) do
     t.datetime "updated_at",  null: false
   end
 
-  create_table "related_moods", force: :cascade do |t|
-    t.integer  "mood_1_id"
-    t.integer  "mood_2_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "related_moods", ["mood_1_id"], name: "index_related_moods_on_mood_1_id"
-  add_index "related_moods", ["mood_2_id"], name: "index_related_moods_on_mood_2_id"
-
   create_table "scales", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
     t.string   "audio_url"
     t.string   "image_url"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "primary_mood_id"
+    t.integer  "secondary_mood_id"
+    t.string   "i"
+    t.string   "ii"
+    t.string   "iii"
+    t.string   "iv"
+    t.string   "v"
+    t.string   "vi"
+    t.string   "vii"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
   create_table "tempos", force: :cascade do |t|
