@@ -1,14 +1,16 @@
 # Moods
 
-joyful = Mood.create(name: "Joyful", primary: true)
-powerful = Mood.create(name: "Powerful", primary: true)
-peaceful = Mood.create(name: "Peaceful", primary: true)
-sad = Mood.create(name: "Sad", primary: true)
-mad = Mood.create(name: "Mad", primary: true)
-scared = Mood.create(name: "scared", primary: true)
+joyful = Mood.create(name: "Joyful", primary: true, image_url: "http://www.intuition-physician.com/wp-content/uploads/2012/02/joyful-children.jpg ")
+powerful = Mood.create(name: "Powerful", primary: true, image_url: "http://d236bkdxj385sg.cloudfront.net/wp-content/uploads/2012/01/blackwonderwoman.jpg  ")
+peaceful = Mood.create(name: "Peaceful", primary: true, image_url: "https://c.tadst.com/gfx/750w/sunrise-sunset-sun-calculator.jpg?1  ")
+sad = Mood.create(name: "Sad", primary: true, image_url: "http://catsaredope.weebly.com/uploads/1/6/0/2/16022506/1121824_orig.jpg ")
+mad = Mood.create(name: "Mad", primary: true, image_url: "
+http://www.autismafter16.com/sites/default/files/imagecache/article_large/article-images/iStock_000013771292Small.jpg
+")
+scared = Mood.create(name: "scared", primary: true, image_url: "http://4.bp.blogspot.com/-ea_qlW15nDQ/T0H74RqXiDI/AAAAAAAAAdA/X_hcMb2yoH0/s1600/scared-baby.jpg ")
 
 excited = joyful.secondary_moods.create(name: "Excited", image_url: "http://melotel.com/wp-content/uploads/2013/01/excited.jpg")
-sexy = joyful.secondary_moods.create(name: "Sexy")
+sexy = joyful.secondary_moods.create(name: "Sexy", image_url:"http://www.theurbanelife.com/wp-content/uploads/2011/07/Sexy_BW.jpeg")
 energetic = joyful.secondary_moods.create(name: "Energetic", image_url: "https://sunwarrior.com/uploads/health_hub/article/2015/07/man_energy_energetic_happy_outside_nature_grass_sky_movement_pic.jpg")
 playful = joyful.secondary_moods.create(name: "Playful", image_url: "http://i3.mirror.co.uk/incoming/article4436256.ece/ALTERNATES/s1227b/Animal-pictures-of-the-week.png")
 creative = joyful.secondary_moods.create(name: "Creative", image_url: "http://www.blogcdn.com/www.dailyfinance.com/media/2013/05/artist-604cs052113.jpg")
