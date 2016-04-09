@@ -10,6 +10,7 @@ class MoodsController < ApplicationController
   # GET /moods/1
   # GET /moods/1.json
   def show
+    
   end
 
   # GET /moods/new
