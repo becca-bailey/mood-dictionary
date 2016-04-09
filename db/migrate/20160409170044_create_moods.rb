@@ -3,7 +3,8 @@ class CreateMoods < ActiveRecord::Migration
     create_table :moods do |t|
       t.string :name
       t.text :description
-      t.references :moodable, polymorphic: true, index: true  
+      t.references :primary_mood, index: true
+      t.references :moodable, polymorphic: true, index: true
       t.timestamps null: false
     end
   end
