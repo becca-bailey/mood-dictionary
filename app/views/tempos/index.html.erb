@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tempos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Bpm</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tempos.each do |tempo| %>
+      <tr>
+        <td><%= tempo.bpm %></td>
+        <td><%= link_to 'Show', tempo %></td>
+        <td><%= link_to 'Edit', edit_tempo_path(tempo) %></td>
+        <td><%= link_to 'Destroy', tempo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tempo', new_tempo_path %>

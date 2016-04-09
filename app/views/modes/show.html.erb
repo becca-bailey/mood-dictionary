@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mode.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @mode.description %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @mode.url %>
+</p>
+
+<%= link_to 'Edit', edit_mode_path(@mode) %> |
+<%= link_to 'Back', modes_path %>

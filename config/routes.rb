@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :tempos
+  resources :colors
+  resources :scales
+  resources :modes
   resources :photos
   resources :moods
   # The priority is based upon order of creation: first created -> highest priority.

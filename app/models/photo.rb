@@ -1,3 +1,3 @@
 class Photo < ActiveRecord::Base
-  belongs_to :mood
+  has_many :moods, as: :moodable
 end
