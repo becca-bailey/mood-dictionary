@@ -20,37 +20,17 @@ ActiveRecord::Schema.define(version: 20160409174811) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "modes", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.string   "audio_url"
-    t.string   "image_url"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
   create_table "moods", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
     t.integer  "primary_mood_id"
     t.string   "image_url"
-    t.integer  "moodable_id"
-    t.string   "moodable_type"
     t.boolean  "primary"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
 
-  add_index "moods", ["moodable_type", "moodable_id"], name: "index_moods_on_moodable_type_and_moodable_id"
   add_index "moods", ["primary_mood_id"], name: "index_moods_on_primary_mood_id"
-
-  create_table "photos", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.string   "url"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
 
   create_table "scales", force: :cascade do |t|
     t.string   "name"
