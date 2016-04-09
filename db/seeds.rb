@@ -51,27 +51,27 @@ anxious = scared.secondary_moods.create(name: "Anxious", image_url: "http://www.
 
 # Scales
 
-major = Scale.create(name: "C major scale", description: 'Happy; can be majestic or sentimental when slow. The white keys on the piano. Examples: “Mary Had A Little Lamb,” “Twinkle Twinkle Little Star.', i: "C", ii: "Dm", iii: "Em", iv: "F", v: "G", vi: "Am", vii: "Bdim")
+major = Scale.create(name: "C major scale", description: 'Happy; can be majestic or sentimental when slow. The white keys on the piano. Examples: “Mary Had A Little Lamb,” “Twinkle Twinkle Little Star.', i: "C", ii: "Dm", iii: "Em", iv: "F", v: "G", vi: "Am", vii: "Bdim", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Ionian_mode_C.png/220px-Ionian_mode_C.png", audio_url: "https://upload.wikimedia.org/wikipedia/commons/9/99/Ionian_mode_C.mid")
 
 major.primary_mood_id = loving.id
 major.secondary_mood_id = proud.id
 
-mixolydian = Scale.create(name: "C Mixolydian mode", description: "Bluesy, rock; can also be exotic/modal. Play over C7 chord. Same pitches as F major. Example: “Tomorrow Never Knows” by the Beatles.", i: "C", ii: "Dm", iii: "Edim", iv: "F", v: "Gm", vi: "Am", vii: "A#")
+mixolydian = Scale.create(name: "C Mixolydian mode", description: "Bluesy, rock; can also be exotic/modal. Play over C7 chord. Same pitches as F major. Example: “Tomorrow Never Knows” by the Beatles.", i: "C", ii: "Dm", iii: "Edim", iv: "F", v: "Gm", vi: "Am", vii: "A#", image_url: "https://en.wikipedia.org/wiki/File:Mixolydian_mode_C.png", audio_url: "https://upload.wikimedia.org/wikipedia/commons/1/16/Mixolydian_mode_C.mid")
 
 mixolydian.primary_mood_id = energetic.id
 mixolydian.secondary_mood_id = proud.id
 
-lydian = Scale.create(name: "C Lydian mode", description: "Ethereal, dreamy, futuristic. Same pitches as G major. Example: “Possibly Maybe” by Björk (from the line “As much as I definitely enjoy solitude…”)", i: "C", ii: "Dm", iii: "Em", iv: "F#dim", v: "G", vi: "Am", vii: "A#")
+lydian = Scale.create(name: "C Lydian mode", description: "Ethereal, dreamy, futuristic. Same pitches as G major. Example: “Possibly Maybe” by Björk (from the line “As much as I definitely enjoy solitude…”)", i: "C", ii: "Dm", iii: "Em", iv: "F#dim", v: "G", vi: "Am", vii: "A#", image_url: "https://en.wikipedia.org/wiki/File:Lydian_mode_C.png", audio_url: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Lydian_mode_C_midi.mid")
 
 lydian.primary_mood_id = creative.id
 lydian.secondary_mood_id = intimate.id
 
-natural_minor = Scale.create(name: "C natural minor scale", description: "Sentimental, tragic. Same pitches as E flat major.", i: "Cm", ii: "Ddim", iii: "D#", iv: "Fm", v: "Gm", vi: "G#", vii: "A#")
+natural_minor = Scale.create(name: "C natural minor scale", description: "Sentimental, tragic. Same pitches as E flat major.", i: "Cm", ii: "Ddim", iii: "D#", iv: "Fm", v: "Gm", vi: "G#", vii: "A#", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Amoll.svg/220px-Amoll.svg.png", audio_url: "https://upload.wikimedia.org/wikipedia/commons/5/56/Amoll.mid")
 
 natural_minor.primary_mood_id = lonely.id
 natural_minor.secondary_mood_id = depressed.id
 
-harmonic_minor = Scale.create(name: "C harmonic minor scale", description: "Tragic, exotic, Middle Eastern.", i: "C", ii: "Ddim", iii: "D#aug", iv: "Fm", v: "G", vi: "G#", vii: "G#dim")
+harmonic_minor = Scale.create(name: "C harmonic minor scale", description: "Tragic, exotic, Middle Eastern.", i: "C", ii: "Ddim", iii: "D#aug", iv: "Fm", v: "G", vi: "G#", vii: "G#dim", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/A_harmonic_minor_scale_ascending_and_descending.png/400px-A_harmonic_minor_scale_ascending_and_descending.png", audio_url: "https://upload.wikimedia.org/wikipedia/commons/7/74/A_harmonic_minor_scale_ascending_and_descending.mid")
 
 harmonic_minor.primary_mood_id = hurt.id
 harmonic_minor.secondary_mood_id = rejected.id
@@ -81,37 +81,37 @@ melodic_minor = Scale.create(name: "C melodic minor scale", description: "Myster
 melodic_minor.primary_mood_id = depressed.id
 melodic_minor.secondary_mood_id = anxious.id
 
-dorian = Scale.create(name: "C Dorian mode", description: "Hip, sophisticated, jazzy. Same pitches as B flat major. Example: “So What” by Miles Davis.", i: "Cmin", ii: "Dmin", iii: "D#", iv: "F", v: "Gm", vi: "Adim", vii: "Bdim")
+dorian = Scale.create(name: "C Dorian mode", description: "Hip, sophisticated, jazzy. Same pitches as B flat major. Example: “So What” by Miles Davis.", i: "Cmin", ii: "Dmin", iii: "D#", iv: "F", v: "Gm", vi: "Adim", vii: "Bdim", image_url: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Dorian_mode_C.png", audio_url: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Dorian_mode_C.mid")
 
 dorian.primary_mood_id = insecure.id
 dorian.secondary_mood_id = energetic.id
 
-phrygian = Scale.create(name: "C Phrygian mode", description: "Spanish/Flamenco. Same pitches as A flat major.", i: "Cm", ii: "Dm", iii: "D#", iv: "F", v: "Gm", vi: "Adim", vii: "A#")
+phrygian = Scale.create(name: "C Phrygian mode", description: "Spanish/Flamenco. Same pitches as A flat major.", i: "Cm", ii: "Dm", iii: "D#", iv: "F", v: "Gm", vi: "Adim", vii: "A#", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Phrygian_mode_C.png/300px-Phrygian_mode_C.png", audio_url: "https://upload.wikimedia.org/wikipedia/commons/4/42/Phrygian_mode_C_midi.mid")
 
 phrygian.primary_mood_id = energetic.id
 phrygian.secondary_mood_id = insecure.id
 
-blues = Scale.create(name: "C blues scale", description: "Bluesy, obviously. Works great over major and minor chords. C minor pentatonic with sharp fourth/flat fifth added.", i: "Cm", ii: "Ddim", iii: "D#", iv: "Fm", v: "Gm", vi: "G#", vii: "A#")
+blues = Scale.create(name: "C blues scale", description: "Bluesy, obviously. Works great over major and minor chords. C minor pentatonic with sharp fourth/flat fifth added.", i: "Cm", ii: "Ddim", iii: "D#", iv: "Fm", v: "Gm", vi: "G#", vii: "A#", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Blues_scale_hexatonic_C.png/400px-Blues_scale_hexatonic_C.png", audio_url: "https://upload.wikimedia.org/wikipedia/commons/2/29/Blues_scale_hexatonic_C.mid")
 
 blues.primary_mood_id = energetic.id
 blues.secondary_mood_id = insecure.id
 
-major_pentatonic = Scale.create(name: "C major pentatonic scale", description: "Joyful; widely used in world and folk music. Major scale with 4th and 7th removed. Same pitches as A minor pentatonic. Here’s a blog post about playing pentatonics on guitar.", i: "C", ii: "Dm", iii: "Edim", iv: "F", v: "Gm", vi: "Am", vii: "A#")
+major_pentatonic = Scale.create(name: "C major pentatonic scale", description: "Joyful; widely used in world and folk music. Major scale with 4th and 7th removed. Same pitches as A minor pentatonic. Here’s a blog post about playing pentatonics on guitar.", i: "C", ii: "Dm", iii: "Edim", iv: "F", v: "Gm", vi: "Am", vii: "A#", image_url: "https://upload.wikimedia.org/score/7/5/756b1ensi3iu6vn4elyyb4uwcgn0z1u/756b1ens.png")
 
 major_pentatonic.primary_mood_id = proud.id
 major_pentatonic.secondary_mood_id = excited.id
 
-minor_pentatonic = Scale.create(name: "C minor pentatonic scale", description: "Widely used in rock, world and folk music. Minor scale with 2nd and 6th removed. Same pitches as E flat major pentatonic. Here’s a blog post about playing pentatonics on guitar.", i: "Cm", ii: "Ddim", iii: "D#", iv: "Fm", v: "Gm", vi: "G#", vii: "A#")
+minor_pentatonic = Scale.create(name: "C minor pentatonic scale", description: "Widely used in rock, world and folk music. Minor scale with 2nd and 6th removed. Same pitches as E flat major pentatonic. Here’s a blog post about playing pentatonics on guitar.", i: "Cm", ii: "Ddim", iii: "D#", iv: "Fm", v: "Gm", vi: "G#", vii: "A#", image_url: "https://upload.wikimedia.org/score/7/5/756b1ensi3iu6vn4elyyb4uwcgn0z1u/756b1ens.png")
 
 minor_pentatonic.primary_mood_id = energetic.id
 minor_pentatonic.secondary_mood_id = angry.id
 
-whole_tone = Scale.create(name: "C whole tone scale", description: "Dreamy, underwater. Every alternating key on the piano. Same pitches as D, E, F sharp, G sharp and A sharp whole tone scales. Example: Background parts in the Simpsons theme song.", i: "Caug", ii: "Daug", iii: "Eaug", iv: "F#aug", v: "G#aug", vi: "A#aug", vii: "B+")
+whole_tone = Scale.create(name: "C whole tone scale", description: "Dreamy, underwater. Every alternating key on the piano. Same pitches as D, E, F sharp, G sharp and A sharp whole tone scales. Example: Background parts in the Simpsons theme song.", i: "Caug", ii: "Daug", iii: "Eaug", iv: "F#aug", v: "G#aug", vi: "A#aug", vii: "B+", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Whole_tone_scale_on_C.png/400px-Whole_tone_scale_on_C.png", audio_url: "https://upload.wikimedia.org/wikipedia/commons/8/84/Whole_tone_scale_on_C.ogg")
 
 whole_tone.primary_mood_id = playful.id
 whole_tone.secondary_mood_id = thoughtful.id
 
-diminished = Scale.create(name: "C diminished scale", description: "Also known as the octatonic scale. Dark, mysterious. Same pitches as E flat, G flat and A diminished scales. Examples: movies about Dracula.", i: "C", ii: "C#aug", iii: "D#", iv: "Edim", v: "F#", vi: "Am", vii: "A#dim")
+diminished = Scale.create(name: "C diminished scale", description: "Also known as the octatonic scale. Dark, mysterious. Same pitches as E flat, G flat and A diminished scales. Examples: movies about Dracula.", i: "C", ii: "C#aug", iii: "D#", iv: "Edim", v: "F#", vi: "Am", vii: "A#dim", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Octatonic_scales_on_C.png/330px-Octatonic_scales_on_C.png", audio_url: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Octatonic_scales_on_C.mid")
 
 diminished.primary_mood_id = anxious.id
 diminished.secondary_mood_id = helpless.id
@@ -121,17 +121,17 @@ lydian_domimant = Scale.create(name: "C Lydian dominant mode", description: "Als
 lydian_domimant.primary_mood_id = excited.id
 lydian_domimant.secondary_mood_id = creative.id
 
-ahava_raba = Scale.create(name: "C Ahava Raba", description: "Exotic, Middle Eastern, Jewish. Same pitches as F harmonic minor. Example: “Hava Nagila.”", i: "C", ii: "C#m", iii: "Eaug", iv: "Fm", v: "Gdim", vi: "G#aug", vii: "A#m")
+ahava_raba = Scale.create(name: "C Ahava Raba", description: "Exotic, Middle Eastern, Jewish. Same pitches as F harmonic minor. Example: “Hava Nagila.”", i: "C", ii: "C#m", iii: "Eaug", iv: "Fm", v: "Gdim", vi: "G#aug", vii: "A#m", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Lydian_dominant_C.png/300px-Lydian_dominant_C.png", audio_url: "https://upload.wikimedia.org/wikipedia/commons/8/83/D_Freygish.mid")
 
 ahava_raba.primary_mood_id = creative.id
 ahava_raba.secondary_mood_id = excited.id
 
-locrian = Scale.create(name: "C Locrian mode", description: "Very dark and unstable. Use over C half-diminished chords. Same pitches as C sharp/D flat major and B flat natural minor.", i: "C#", ii: "Cdim", iii: "D#m", iv: "Fm", v: "F#", vi: "G#", vii: "A#m")
+locrian = Scale.create(name: "C Locrian mode", description: "Very dark and unstable. Use over C half-diminished chords. Same pitches as C sharp/D flat major and B flat natural minor.", i: "C#", ii: "Cdim", iii: "D#m", iv: "Fm", v: "F#", vi: "G#", vii: "A#m", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Locrian_mode_C.png/300px-Locrian_mode_C.png", audio_url: "https://upload.wikimedia.org/wikipedia/commons/f/fd/Locrian_mode_C.mid")
 
 locrian.primary_mood_id = confused.id
 locrian.secondary_mood_id = anxious.id
 
-altered = Scale.create(name: "C altered scale", description: "Use over a C7 chord to make it sound very intellectual and jazzy. Same pitches as C sharp/D flat melodic minor.", i: "Caug", ii: "C#min", iii: "D#", iv: "Eaug", v: "F#", vi: "G#", vii: "A#dim")
+altered = Scale.create(name: "C altered scale", description: "Use over a C7 chord to make it sound very intellectual and jazzy. Same pitches as C sharp/D flat melodic minor.", i: "Caug", ii: "C#min", iii: "D#", iv: "Eaug", v: "F#", vi: "G#", vii: "A#dim", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Altered_Scale_in_C.JPG/400px-Altered_Scale_in_C.JPG", audio_url: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Altered_scale_on_C.mid")
 
 altered.primary_mood_id = important.id
 altered.secondary_mood_id = thoughtful.id
