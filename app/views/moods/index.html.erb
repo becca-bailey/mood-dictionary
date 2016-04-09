@@ -1,7 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Moods</h1>
+<h1>Mood Modes Dictionary</h1>
+<%= audio_tag "http://soundbible.com/mp3/Red_stag_roar-Juan_Carlos_-2004708707.mp3", controls: true, autoplay: false %>
 
+<div class="container">
 <table>
   <thead>
     <tr>
@@ -10,12 +12,32 @@
       <th colspan="3"></th>
     </tr>
   </thead>
+  <div class="row">
+   <% @moods.each do |mood| %>
+<div class="col s12 m6 l3">
+          <div class="card">
+            <div class="card-image">
+              <img src="<%= mood.image_url %>">
+              <span class="card-title"><%= mood.name %></span>
+            </div>
+            <div class="card-content">
+              <p><%= mood.description %></p>
+
+            </div>
+            <div class="card-action">
+              <%= link_to 'I Feel Like This', mood %></a>
+            </div>
+          </div>
+        </div>
+    <% end %>
+</div>
 
   <tbody>
     <% @moods.each do |mood| %>
       <tr>
         <td><%= mood.name %></td>
         <td><%= mood.description %></td>
+        <td><%= mood.image_url %></td>
         <td><%= link_to 'Show', mood %></td>
         <td><%= link_to 'Edit', edit_mood_path(mood) %></td>
         <td><%= link_to 'Destroy', mood, method: :delete, data: { confirm: 'Are you sure?' } %></td>
