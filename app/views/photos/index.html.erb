@@ -20,9 +20,26 @@
         <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
         <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+ <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="<%= photo.url %>">
+              <span class="card-title"><%= photo.name %></span>
+            </div>
+            <div class="card-content">
+              <p><%=photo.related_moods %></p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
     <% end %>
   </tbody>
 </table>
+
 
 <br>
 
